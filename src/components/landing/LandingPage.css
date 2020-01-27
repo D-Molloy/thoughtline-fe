@@ -1,0 +1,207 @@
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #ee5f3f inset;
+  -webkit-text-fill-color: white !important;
+}
+/* 
+html {
+  font-size: calc(1em + 1vw);
+} */
+.landing__container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: #87cefa; */
+  font-size: 2rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  /* https://www.gradient-animator.com */
+  background: linear-gradient(179deg, #87cefa, #e69f65);
+  background-size: 400% 400%;
+
+  -webkit-animation: bg-animation 12s ease infinite;
+  -moz-animation: bg-animation 12s ease infinite;
+  -o-animation: bg-animation 12s ease infinite;
+  animation: bg-animation 12s ease infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes bg-animation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-o-keyframes bg-animation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes bg-animation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.landing__login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ee5f3f;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__signup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ee5f3f;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow-y: auto; */
+}
+
+.landing__imgUpload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ee5f3f;
+  /* background-color: #e8745a; */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.landing__login.show {
+  transform: translateX(0px);
+}
+.landing__signup.show {
+  transform: translateX(0px);
+}
+.landing__imgUpload.show {
+  transform: translateX(0px);
+}
+
+.landing__loginSignupBtn {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: 3px solid #e8745a;
+  background-color: lightskyblue;
+  color: #ee5f3f;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+/* Signup.js */
+.landing__signupContainer {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.or_seperator {
+  position: relative;
+  margin: 0;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  color: #e8745a;
+}
+.or_seperator::before {
+  content: " ";
+  position: absolute;
+  top: 54%;
+  left: 0;
+  transform: translateX(-110px);
+  width: 100px;
+  border-bottom: 1px solid #e8745a;
+}
+.or_seperator::after {
+  content: " ";
+  position: absolute;
+  top: 54%;
+  left: 0;
+  transform: translateX(35px);
+  width: 100px;
+  border-bottom: 1px solid #e8745a;
+}
+/* SCROLLBAR */
+.landing__signup.show::-webkit-scrollbar-track {
+  background: #ee5f3f;
+}
+
+.landing__signup.show::-webkit-scrollbar-thumb {
+  background: #e8745a;
+}
+.roger-test {
+  display: flex;
+  flex-direction: column;
+  background-color: #ee5f3f;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
